@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fieldbook: finance dashboard</title>
+    <meta name="description" content="A finance dashboard for a small business or a household: account balances, cash flow, transactions, budgets and recurring bills." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fieldbook: finance dashboard" />
+    <meta property="og:description" content="Account balances, cash flow, transactions, budgets and recurring bills in one place." />
+    <meta property="og:image" content="__SITE_URL__/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f5f7fa" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("theme") === "dark") document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>This dashboard needs JavaScript to run.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
