@@ -23,7 +23,9 @@ export function Logo({ size = 40 }: { size?: number }) {
 
 export function Layout() {
   const { pathname } = useLocation();
-  useEffect(() => window.scrollTo(0, 0), [pathname]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="shell">
